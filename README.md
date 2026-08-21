@@ -1,15 +1,19 @@
 <img src="./assets/banner.svg" alt="Saqib Ali — Full-Stack Developer" width="100%">
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=19&pause=1200&color=F2B544&center=true&vCenter=true&width=720&lines=I+own+systems+end+to+end.;Data+modelling.+APIs.+Auth.+Tests.;My+own+Linux+deployments+on+AWS.;500%2B+automated+tests+across+two+production+systems." alt="Typing intro">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1300&color=F2B544&center=true&vCenter=true&width=760&lines=I+own+systems+end+to+end.;Data+modelling.+APIs.+Auth.+Tests.;My+own+Linux+deployments+on+AWS.;Most+developers+hand+you+a+repo+and+stop." alt="">
 </p>
 
 <p align="center">
-  <a href="mailto:alisakib543@gmail.com"><img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=f2b544" alt="Email"></a>
-  <a href="https://linkedin.com/in/saqib-ali-developer"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=f2b544" alt="LinkedIn"></a>
-  <img src="https://img.shields.io/badge/UTC+5-0d1117?style=for-the-badge&logo=clockify&logoColor=f2b544" alt="Timezone">
-  <img src="https://komarev.com/ghpvc/?username=Sakib543&color=f2b544&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views">
+  <a href="mailto:alisakib543@gmail.com"><img src="https://img.shields.io/badge/EMAIL-0d1117?style=for-the-badge&logo=gmail&logoColor=f2b544&labelColor=0d1117" alt="Email"></a>
+  <a href="https://linkedin.com/in/saqib-ali-developer"><img src="https://img.shields.io/badge/LINKEDIN-0d1117?style=for-the-badge&logo=linkedin&logoColor=f2b544&labelColor=0d1117" alt="LinkedIn"></a>
+  <img src="https://img.shields.io/badge/KARACHI%20·%20UTC%2B5-0d1117?style=for-the-badge&logo=googlemaps&logoColor=f2b544&labelColor=0d1117" alt="Location">
+  <img src="https://img.shields.io/badge/OPEN%20TO%20REMOTE-0d1117?style=for-the-badge&logo=protondrive&logoColor=f2b544&labelColor=0d1117" alt="Availability">
 </p>
+
+<br>
+
+<img src="./assets/numbers.svg" alt="~3 years shipping · 500+ automated tests · 6 sites in production · 2 countries served" width="100%">
 
 <br>
 
@@ -21,20 +25,20 @@ Nearly three years shipping to production, including two years of remote asynchr
 
 Currently at **WB Communications**, maintaining an OSHA-authorized safety training platform in live production.
 
-```ts
-const saqib = {
-  role:     "Full-Stack Developer",
-  building: ["Next.js", "React", "TypeScript", "Node", "Express"],
-  storing:  ["MongoDB", "MySQL", "SQLite", "Redis"],
-  shipping: ["AWS EC2", "Ubuntu", "Nginx", "Caddy", "PM2"],
-  testing:  ["Jest", "Supertest", "xUnit", "Playwright"],
-  openTo:   "remote work across EU hours and US-East afternoons",
-} as const;
-```
+<details>
+<summary><b>&nbsp;How I actually work</b></summary>
 
 <br>
 
-<img src="https://raw.githubusercontent.com/Sakib543/Sakib543/output/snake.svg" alt="Contribution snake" width="100%">
+**I finish things.** A repo that runs on localhost isn't a project. Provisioning the box, configuring the reverse proxy, wiring up HTTPS, scripting the deploy, and being the one who gets called when it breaks — that's the job I sign up for.
+
+**I don't trust the client.** Prices get re-validated server-side. State machines enforce what the UI merely suggests. Constraints live in the database, not in a validation function someone can bypass.
+
+**I write tests as regression locks.** Not for a coverage badge. Each test in my projects exists because something specific broke, and I decided it would never break silently again.
+
+**I work async.** Two years across a 10-hour gap with US clients. Written updates, clear handoffs, no waiting on me to be awake.
+
+</details>
 
 <br>
 
@@ -42,116 +46,122 @@ const saqib = {
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-### Nawab Pakwan
-**Real-time restaurant ordering platform**
-
-Four connected surfaces on one system: customer storefront, live kitchen console, rider app, and owner analytics dashboard.
-
-Orders travel over Socket.IO with a 20-second polling fallback, plus Web Push so alerts reach staff on locked devices. Nothing about money is trusted from the client — pricing is re-validated server-side, and a payment state machine keeps unpaid orders out of the kitchen queue. Auth is JWT in httpOnly cookies with token versioning across three roles, so a compromised session dies on every device at once.
-
-**194 backend tests.** Provisioned and deployed on AWS EC2 by me — PM2 zero-downtime reloads, Caddy reverse proxy, scripted deploys.
-
-`Next.js 16` `React 19` `TypeScript` `Node` `MongoDB` `Socket.IO` `AWS`
-
-</td>
-<td width="50%" valign="top">
-
-### Kismo Pharmacy
-**Offline-first point-of-sale**
-
-A fully offline Windows POS for independent pharmacies, shipped as a single self-contained executable. No runtime install, no database setup, no internet.
-
-Currency is modelled as integer paisa so till reconciliation never drifts. Maximum retail price is enforced as a database constraint rather than app validation, so it can't be bypassed. The credit ledger derives balances from immutable history instead of an editable column. Receipts print directly over ESC/POS, and the sale commits *before* printing — so a paper jam can never lose a transaction.
-
-**~335 tests** across a layered architecture isolating domain logic from database and hardware.
-
-`C#` `.NET 10` `WPF` `SQLite` `Dapper` `xUnit`
-
-</td>
+<td width="50%"><img src="./assets/card-nawab.svg" alt="Nawab Pakwan — real-time restaurant ordering platform" width="100%"></td>
+<td width="50%"><img src="./assets/card-kismo.svg" alt="Kismo Pharmacy — offline-first point-of-sale" width="100%"></td>
 </tr>
-</table>
-
-<table>
 <tr>
-<td width="50%" valign="top">
-
-### [OSHA Training School](https://store.oshatrainingschool.com) 🇺🇸
-**LMS e-commerce platform**
-
-Storefront for an OSHA-authorized US training provider selling ~60 online safety courses in English and Spanish.
-
-The core of the build was **Edwiser Bridge**, connecting WooCommerce to a Moodle LMS so a purchase automatically provisions the learner's enrolment — no manual step between payment and access.
-
-`WordPress` `WooCommerce` `Moodle` `PHP`
-
-</td>
-<td width="50%" valign="top">
-
-### [Al Rehman Security](https://walisecurity.vercel.app)
-**Multi-page marketing site**
-
-Nine server-rendered pages for a government-licensed security company, structured around six service verticals so visitors land on their own use case.
-
-Animated statistics, validated enquiry form, maps integration, and full Open Graph and local SEO metadata.
-
-`Next.js` `TypeScript` `Tailwind` `SEO`
-
-</td>
+<td width="50%"><a href="https://store.oshatrainingschool.com"><img src="./assets/card-osha.svg" alt="OSHA Training School — LMS e-commerce platform" width="100%"></a></td>
+<td width="50%"><a href="https://walisecurity.vercel.app"><img src="./assets/card-alrehman.svg" alt="Al Rehman Security — multi-page marketing site" width="100%"></a></td>
 </tr>
 </table>
+
+<details>
+<summary><b>&nbsp;The decisions behind these, in more detail</b></summary>
+
+<br>
+
+**Nawab Pakwan — why a polling fallback?**  
+Sockets drop. On restaurant wifi they drop constantly. A kitchen that silently stops receiving orders is worse than no system at all, so a 20-second poll runs underneath the socket as a floor. Web Push covers the case where the tablet is locked.
+
+**Nawab Pakwan — why token versioning?**  
+Stateless JWTs can't be revoked. Add a version number to the user record, embed it in the token, compare on every request — now bumping one integer kills every session on every device instantly. Costs one field, buys real security.
+
+**Kismo — why integer paisa?**  
+Floating-point arithmetic drifts. On a till that reconciles daily, drift becomes a variance nobody can explain and a pharmacist who stops trusting the software. Integers can't drift.
+
+**Kismo — why commit before printing?**  
+Printers jam, run out of paper, and lose USB connection. If the sale commits after printing, a jam loses the transaction and the money. Commit first, print second, reprint on demand.
+
+**OSHA — why Edwiser Bridge?**  
+WooCommerce handles money well. Moodle handles learning well. Neither handles the other. The bridge means a payment provisions an enrolment automatically instead of someone manually adding students to courses every day.
+
+</details>
 
 <br>
 
 ## `>` also shipped
 
-| Project | What it is | Stack |
-|---|---|---|
-| **[WB Communications](https://wb-communications.co)** | Corporate site for a software agency, SSR with an animated product dashboard | `Next.js 16` |
-| **[AR Trakker](https://www.artrakker.com)** | Single-page lead-gen site for a GPS tracking company, WhatsApp-first conversion | `HTML` `JS` |
-| **[Crazzy4Shoes](https://crazzy4shoes.com)** | Full WooCommerce storefront — hosting, domain, theme and go-live all mine | `WordPress` |
-| **BeatBuy** | Event ticketing front end with Stripe and interactive seat-map selection | `React` `TypeScript` |
-| **Web scraper** | Playwright extraction tool that cut manual data collection effort ~90% | `Playwright` `TS` |
-| **Rentifi** | MERN car rental app — backend: data modelling, REST APIs, auth, booking logic | `Node` `MongoDB` |
+<table>
+<tr>
+<td width="33%" valign="top">
+
+**[WB Communications](https://wb-communications.co)**
+
+Corporate site for a software agency. SSR with an animated product dashboard as the hero.
+
+`Next.js 16` `SSR`
+
+</td>
+<td width="33%" valign="top">
+
+**[AR Trakker](https://www.artrakker.com)**
+
+Single-page lead-gen site for a GPS tracking company. WhatsApp-first conversion, no checkout.
+
+`HTML` `JS` `SEO`
+
+</td>
+<td width="33%" valign="top">
+
+**[Crazzy4Shoes](https://crazzy4shoes.com)**
+
+Full WooCommerce storefront. Hosting, domain, theme and go-live all mine.
+
+`WordPress` `WooCommerce`
+
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+
+**BeatBuy**
+
+Event ticketing front end. Stripe payments and interactive seat-map selection.
+
+`React` `TypeScript` `Stripe`
+
+</td>
+<td width="33%" valign="top">
+
+**Web scraper**
+
+Playwright extraction tool that cut manual data collection effort by ~90%.
+
+`Playwright` `TypeScript`
+
+</td>
+<td width="33%" valign="top">
+
+**Rentifi**
+
+MERN car rental app. Backend: data modelling, REST APIs, auth, booking logic.
+
+`Node` `Express` `MongoDB`
+
+</td>
+</tr>
+</table>
 
 <br>
 
 ## `>` stack
 
-<p>
-<img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,nodejs,express,tailwind,cs,dotnet&theme=dark" alt="Building">
-</p>
-<p>
-<img src="https://skillicons.dev/icons?i=mongodb,mysql,sqlite,redis,wordpress,php&theme=dark" alt="Storing">
-</p>
-<p>
-<img src="https://skillicons.dev/icons?i=aws,linux,nginx,vercel,git,github,docker&theme=dark" alt="Shipping">
-</p>
-<p>
-<img src="https://skillicons.dev/icons?i=jest,postman,figma,vscode&theme=dark" alt="Testing">
-</p>
+<img src="./assets/stack.svg" alt="Building: Next.js, React, TypeScript, JavaScript, Node.js, Express, Tailwind, C#. Storing: MongoDB, MySQL, SQLite, Redis, Mongoose, WordPress. Shipping: AWS EC2, Ubuntu, Nginx, Caddy, PM2, SSH, Vercel, Cloudflare R2. Testing: Jest, Supertest, xUnit, Playwright, Postman." width="100%">
 
 <br>
 
 ## `>` the numbers
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Sakib543&show_icons=true&hide_border=true&theme=transparent&title_color=f2b544&icon_color=f2b544&text_color=8b949e&hide=issues&card_width=420" height="165" alt="GitHub stats">
-  <img src="https://streak-stats.demolab.com?user=Sakib543&hide_border=true&background=00000000&stroke=30363d&ring=f2b544&fire=f2b544&currStreakLabel=f2b544&sideLabels=8b949e&dates=8b949e&currStreakNum=e6edf3&sideNums=e6edf3" height="165" alt="Streak">
-</p>
+<img src="./metrics/calendar.svg" alt="Contribution calendar" width="100%">
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sakib543&layout=donut&hide_border=true&theme=transparent&title_color=f2b544&text_color=8b949e&langs_count=8" height="215" alt="Top languages">
+  <img src="./metrics/overview.svg" alt="GitHub overview" width="49%">
+  <img src="./metrics/languages.svg" alt="Most used languages" width="49%">
 </p>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Sakib543&bg_color=00000000&color=e6edf3&line=f2b544&point=f2b544&area_color=f2b544&area=true&hide_border=true&custom_title=Contribution%20activity" width="100%" alt="Activity graph">
-</p>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Sakib543&bg_color=00000000&color=e6edf3&line=f2b544&point=f2b544&area_color=f2b544&area=true&hide_border=true&custom_title=Contribution%20activity" width="100%" alt="Activity graph">
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Sakib543&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="Trophies">
-</p>
+<img src="https://raw.githubusercontent.com/Sakib543/Sakib543/output/snake.svg" alt="Contribution snake" width="100%">
 
 <br>
 
@@ -159,13 +169,16 @@ Animated statistics, validated enquiry form, maps integration, and full Open Gra
 
 Because I've been on call for my own production systems.
 
-I'd rather catch a defect in CI than at 11pm with a kitchen full of orders and a phone that won't stop ringing. Tests in my projects aren't there for a coverage badge — each one is a regression lock against a specific defect that actually happened.
+I'd rather catch a defect in CI than at 11pm with a kitchen full of orders and a phone that won't stop ringing. The 500+ tests across my projects aren't there for a coverage number — each one is a lock against a specific defect that actually happened once, and won't get the chance again.
 
 <br>
 
 ---
 
 <p align="center">
-  <sub><b>Open to remote work across EU hours and US-East afternoons.</b></sub><br>
-  <sub>Karachi, Pakistan &nbsp;·&nbsp; UTC+5 &nbsp;·&nbsp; alisakib543@gmail.com</sub>
+  <img src="https://img.shields.io/badge/AVAILABLE%20FOR%20EU%20HOURS%20%26%20US--EAST%20AFTERNOONS-0d1117?style=for-the-badge&labelColor=0d1117&color=f2b544" alt="Availability">
+</p>
+
+<p align="center">
+  <sub><b>alisakib543@gmail.com</b>&nbsp;&nbsp;·&nbsp;&nbsp;Karachi, Pakistan&nbsp;&nbsp;·&nbsp;&nbsp;UTC+5</sub>
 </p>
